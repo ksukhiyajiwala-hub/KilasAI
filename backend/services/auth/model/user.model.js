@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema(
     name: String,
     email: String,
     avatar: String,
+    plan: {
+      type: String,
+      default: "free plan",
+    },
   },
   { timestamps: true }
 );
