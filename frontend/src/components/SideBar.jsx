@@ -65,7 +65,7 @@ function SideBar() {
             const isActive = selectedConversation?._id == conv?._id;
             return (
               <div
-                onClick={() => dispatch(selectedConversation(conv))}
+                onClick={() => dispatch(setSelectConversation(conv))}
                 className={`flex items-center gap-2.5 cursor-pointer mb-0.5 px-3 py-2.5 rounded-[10px] border transition-colors duration-150
                 ${
                   isActive
